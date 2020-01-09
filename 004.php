@@ -2,10 +2,7 @@
 
 function isPalindrome($quasiStr) {
     $str = (string) $quasiStr;
-    if(strlen($str) % 2 !== 0) {
-        return false;
-    }
-    if($str !== strrev($str)) {
+    if(strlen($str) % 2 !== 0 || $str !== strrev($str)) {
         return false;
     }
     return true;
